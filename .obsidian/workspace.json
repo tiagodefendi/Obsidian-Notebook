@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "63176d66425c6e45",
+        "id": "c65de0e2cd40c6d3",
         "type": "tabs",
         "children": [
           {
-            "id": "9f2480f8175d67ac",
+            "id": "1516cb95c5c6b202",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "UTFPR/UTFPR.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 281.5
   },
   "right": {
     "id": "f17a2168d8275fd2",
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "UTFPR/UTFPR.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "UTFPR/UTFPR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "UTFPR/UTFPR.md"
               }
             }
           }
@@ -148,19 +148,41 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "9f2480f8175d67ac",
+  "active": "1516cb95c5c6b202",
   "lastOpenFiles": [
-    "Untitled.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Engenharia de Software.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Palestra Agile.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Extreme Programming.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Ciclo de Vida Espiral.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Agile.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Rational Unified Process.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Processos de Desenvolvimento de Software.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Waterfall.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Verificação e Validação.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Testes de Software.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Sistemas Legados.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Requisitos de Software.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Manutenção de Software.md",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
     "README.md",
+    "UTFPR/Pesquisa/Large Files/Large Files.md",
+    "UTFPR/Pesquisa/Large Files",
+    "UTFPR/Pesquisa",
+    "UTFPR/UTFPR.md",
+    "Probabilidade e Estatística.md",
+    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software",
+    "2024-07-08.md",
+    "Recording 20240708170423.webm",
+    "UTFPR/3º Semestre/Engenharia de Software",
+    "UTFPR/3º Semestre",
+    "UTFPR",
+    "Untitled.md",
     "UTF/Estrutura de dados/Untitled.md",
     "UTF/3º Semestre",
     "UTF/2º Semestre",
     "UTF/1º Semestre",
     "UTF/Estrutura de dados/Aula 10-59-20.md",
-    "UTF/Estrutura de dados/Untitled",
-    "UTF/Estrutura de dados",
-    "create a link.md",
-    "UTF",
-    "Untitled.canvas"
+    "create a link.md"
   ]
 }

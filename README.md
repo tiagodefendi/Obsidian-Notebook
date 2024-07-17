@@ -1,1 +1,1 @@
-Esse é meu caderno do Obsidian sincronizado com meu GitHub, aqui estão algumas anotações de aulas e algumas outras coisas
+Esse é meu caderno do Obsidian sincronizado com meu GitHub, aqui estão algumas anotações de aulas e algumas outras coisas que vieram na minha mente
