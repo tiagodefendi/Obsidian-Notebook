@@ -100,7 +100,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace/Enlace.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace/Enlace.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,9 +137,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace/Enlace.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -162,9 +158,13 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "5046c1fc615f46a2",
+  "active": "9f54d2005d687ae1",
   "lastOpenFiles": [
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace/Enlace.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão/Full-duplex.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão/Half-duplex.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Classificação de Redes/Classificação por Serviço/Peer-to-peer.md",
+    "Untitled.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Física.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Laser.md",
@@ -182,8 +182,6 @@
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Informações/Analógica.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão/Simplex.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Informações",
-    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão/Full-duplex.md",
-    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão/Half-duplex.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Aplicação.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Inter-redes.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Transporte.md",
@@ -191,7 +189,6 @@
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas/Aplicação.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas/Apresentação.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas/Enlace.md",
-    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas/Física.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física",
