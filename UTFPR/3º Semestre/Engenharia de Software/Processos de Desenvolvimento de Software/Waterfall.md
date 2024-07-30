@@ -33,4 +33,4 @@
 - Documentos muito elaborados
 - Apropriado apenas para requisitos bem entendidos e com raras mudanças
 
-Refs: [[UTFPR]], [[Engenharia de Software]], [[Processos de Desenvolvimento de Software]]
+Refs: [[Engenharia de Software]], [[Processos de Desenvolvimento de Software]]

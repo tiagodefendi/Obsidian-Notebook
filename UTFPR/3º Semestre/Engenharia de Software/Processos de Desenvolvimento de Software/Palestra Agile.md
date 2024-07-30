@@ -128,4 +128,4 @@
     - Priorizar que não precisa arrumar tudo, focar em coisas críticas do sistema
     - Escolher problemas que valem a pena serem arrumados
 
-Refs: [[UTFPR]], [[Engenharia de Software]], [[Processos de Desenvolvimento de Software]], [[Agile]]
+Refs: [[Engenharia de Software]], [[Processos de Desenvolvimento de Software]], [[Agile]]

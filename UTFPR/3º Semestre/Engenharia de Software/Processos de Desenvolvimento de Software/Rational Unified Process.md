@@ -29,4 +29,4 @@
 - “Planeje jogar (implementação) fora; por que você irá, de qualquer maneira”
 - Muitas vezes, após a primeira versão, os desenvolvedores aprenderam corretamente como construir o sistema
 
-Refs: [[UTFPR]], [[Engenharia de Software]], [[Processos de Desenvolvimento de Software]]
+Refs: [[Engenharia de Software]], [[Processos de Desenvolvimento de Software]]

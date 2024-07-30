@@ -3,4 +3,4 @@
 - Manutenção custosa e arriscada
 	- [[Manutenção de Software]]
 
-Refs: [[UTFPR]], [[Engenharia de Software]]
+Refs: [[Engenharia de Software]]

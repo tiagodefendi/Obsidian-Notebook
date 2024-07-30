@@ -7,4 +7,4 @@ Após o processo de desenvolvimento de um software, entra a fase de manutenção
 - Evolutiva
 - Refactoring
 
-Refs: [[UTFPR]], [[Engenharia de Software]]
+Refs: [[Engenharia de Software]]

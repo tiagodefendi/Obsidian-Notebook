@@ -26,4 +26,4 @@
 - Unidade (inteiro) para comparação do tamanho de histórias
 - Pontos de esforço
 
-Refs: [[UTFPR]], [[Engenharia de Software]], [[Processos de Desenvolvimento de Software]]
+Refs: [[Engenharia de Software]], [[Processos de Desenvolvimento de Software]]

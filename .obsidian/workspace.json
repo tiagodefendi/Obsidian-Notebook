@@ -4,20 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "c65de0e2cd40c6d3",
+        "id": "11b9cc4652dcd924",
         "type": "tabs",
         "children": [
           {
-            "id": "1516cb95c5c6b202",
+            "id": "5046c1fc615f46a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UTFPR/UTFPR.md",
+                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace/Enlace.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
+            }
+          }
+        ]
+      },
+      {
+        "id": "20c7dddb60a82c3d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f54d2005d687ae1",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UTFPR/UTFPR.md",
+                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace/Enlace.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UTFPR/UTFPR.md",
+                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace/Enlace.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UTFPR/UTFPR.md"
+                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace/Enlace.md"
               }
             }
           }
@@ -148,41 +162,44 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "1516cb95c5c6b202",
+  "active": "5046c1fc615f46a2",
   "lastOpenFiles": [
-    "UTFPR/3º Semestre/Engenharia de Software/Engenharia de Software.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Palestra Agile.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Extreme Programming.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Ciclo de Vida Espiral.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Agile.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Rational Unified Process.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Processos de Desenvolvimento de Software.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software/Waterfall.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Verificação e Validação.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Testes de Software.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Sistemas Legados.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Requisitos de Software.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Manutenção de Software.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace/Enlace.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Física.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Laser.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Infravermelho.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Rádio.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Fibra Ótica.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Cabo Coaxial.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Cabo Par Trançado.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Modelo ISO-OSI.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Classificação de Redes/Classificação Topológica/Barramento.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelos de Rede.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Transmissão de Dados.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Informações/Digital.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Informações/Analógica.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão/Simplex.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Informações",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão/Full-duplex.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão/Half-duplex.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Aplicação.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Inter-redes.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Transporte.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Modelo TCP-IP.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas/Aplicação.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas/Apresentação.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas/Enlace.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas/Física.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede",
     "Untitled.canvas",
-    "Untitled 1.canvas",
-    "README.md",
-    "UTFPR/Pesquisa/Large Files/Large Files.md",
-    "UTFPR/Pesquisa/Large Files",
-    "UTFPR/Pesquisa",
-    "UTFPR/UTFPR.md",
-    "Probabilidade e Estatística.md",
-    "UTFPR/3º Semestre/Engenharia de Software/Processos de Desenvolvimento de Software",
-    "2024-07-08.md",
-    "Recording 20240708170423.webm",
-    "UTFPR/3º Semestre/Engenharia de Software",
-    "UTFPR/3º Semestre",
-    "UTFPR",
-    "Untitled.md",
-    "UTF/Estrutura de dados/Untitled.md",
-    "UTF/3º Semestre",
-    "UTF/2º Semestre",
-    "UTF/1º Semestre",
-    "UTF/Estrutura de dados/Aula 10-59-20.md",
-    "create a link.md"
+    "Untitled 1.canvas"
   ]
 }

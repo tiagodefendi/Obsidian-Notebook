@@ -26,4 +26,4 @@
 	- [[Verificação e Validação]]
 	- [[Testes de Software]]
 
-Refs: [[UTFPR]], [[Engenharia de Software]]
+Refs: [[Engenharia de Software]]

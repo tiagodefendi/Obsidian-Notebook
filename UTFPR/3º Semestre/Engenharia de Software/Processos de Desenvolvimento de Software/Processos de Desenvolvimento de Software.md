@@ -26,4 +26,4 @@
 - Não há sistema PERFEITO; nem POR LEI…
 - Sistemas-online, high-profile são ALVOS
 
-Refs: [[UTFPR]], [[Engenharia de Software]]
+Refs: [[Engenharia de Software]]

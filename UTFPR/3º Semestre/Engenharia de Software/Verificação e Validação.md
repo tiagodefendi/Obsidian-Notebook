@@ -12,4 +12,4 @@ Com os resultados de um Teste é preciso apurar os resultados e com isso fazer a
 - Cliente
 	- [[Requisitos de Software]]
 
-Refs: [[UTFPR]], [[Engenharia de Software]]
+Refs: [[Engenharia de Software]]

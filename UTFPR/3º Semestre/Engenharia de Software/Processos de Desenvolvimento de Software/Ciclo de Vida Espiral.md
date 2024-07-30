@@ -24,4 +24,4 @@
 - Custo alto do projeto
 - Complicado atingir metas de investimento e marco no cronograma
 
-Refs: [[UTFPR]], [[Engenharia de Software]], [[Processos de Desenvolvimento de Software]]
+Refs: [[Engenharia de Software]], [[Processos de Desenvolvimento de Software]]

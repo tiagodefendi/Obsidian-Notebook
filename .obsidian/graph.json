@@ -5,13 +5,20 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:\"UTFPR/3º Semestre/Engenharia de Software\"  ",
       "color": {
         "a": 1,
         "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"UTFPR/3º Semestre/Redes de Computadores\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
       }
     },
     {
@@ -32,6 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.6316046762907507,
+  "scale": 0.7292312699772863,
   "close": true
 }
