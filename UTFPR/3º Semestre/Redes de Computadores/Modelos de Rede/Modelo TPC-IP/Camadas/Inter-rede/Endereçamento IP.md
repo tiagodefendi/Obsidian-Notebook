@@ -1,0 +1,80 @@
+# O que é?
+
+- Um sistema de comunicação permite que qualquer host se comunique com qualquer host
+- E para tornar o sistema de comunicação universal, ele precisa de um método aceito globalmente a fim de identificar cada computador que se conecta a ele
+- Em redes TCP/IP isto é possível usando-se o endereçamento IP
+- O protocolo TCP/IP é roteável
+	- Ele foi criado pensando-se na interligação de diversas redes
+	- Onde podemos ter diversos caminhos interligando um transmissor e o receptor
+	- Isso possibilitou a criação da rede mundial de computadores (Internet)
+- Endereçamento lógico / Endereçamento IP
+- Cada rede e dispositivo conectado deve usar pelo menos um endereço IP
+- O endereço IP permite identificar o dispositivo e a rede que ele pertence
+- Para interligar diversas redes é preciso de um roteador
+- Usa informações nos pacotes para entregar os pacotes aos respectivos destinos
+- Uma rota é um caminho a ser seguido para entrega de um dado ao seu destino
+- A entrega de dados é facilmente feita pois possuem endereço de destino e origem no pacote
+# Formato de endereçamento IPv4
+
+- Cada host em uma rede TCP/IP um endereço de 32 bits que é usado em toda a comunicação
+- Serão chamados de IP somente
+- É representado em decimal em forma de 4 número de 8 bits separados por um ponto no formato a.b.c.d
+	- Menor valor é 0.0.0.0
+	- Maior valor é 255.255.255.255
+- O endereçamento IP possui basicamente duas partes uma que indica a rede e outra que indica o dispositivo dentro desta rede
+- Uma rede TCP/IP usando o IPv4 pode ter até 4.294.967.296 endereços IP ou 2^32
+	- Teoricamente porque existem alguns números de IP, que são reservados e não podem ser usados, nós veremos isto depois
+- Um endereço IP tem quatro números separados por pontos. Esse tipo de sistema de notação é chamado de notação decimal separada por pontos
+- O conjunto de quatro números é chamado de octeto, uma vez que eles na verdade representam um número binário de 8 bits ou 1 byte
+- Consequentemente, o valor decimal máximo para cada um dos quatro números em um endereço IP é 255, e não 999
+- O valor binário de bit (binary bit value – BBV) permite facilmente converter os bits em um valor decimal comum
+	- Só somar os números da coluna BBV quando o bit um estiver ativo, caso nenhum bit estiver ativo (todos em zero) o número em decimal é zero
+# Esquema de original de endereçamento IP Classfull
+
+- Conceitualmente, cada endereço é um par (netID e hostID), em que netID identifica uma rede e hostID identifica um host nessa rede
+- Para facilitar a distribuição dos endereços IP em redes e hosts, foram especificadas cinco classes de endereços IP
+- Cada endereço é considerado como auto-identificável
+- O limite entre prefixo e sufixo pode ser calculado a partir do endereço isolado, sem referência a informações externas
+- Em particular, a classe de um endereço pode ser determinada a partir dos três bits de alta ordem
+	- Classe A
+		- Primeiro bit 0
+		- netID - 7 bits
+		- hostID - 24 bits
+		- 0.0.0.0 -> 127.255.255.255
+	- Classe B
+		- Primeiros bits 10
+		- netID - 14 bits
+		- hostID - 26 bits
+		- 128.0.0.0 -> 191.255.255.255
+	- Classe C
+		- Primeiros bits 110
+		- netID - 21 bits
+		- hostID - 8 bits
+		- 192.0.0.0 -> 223.255.255.255
+	- Classe D
+		- Primeiros bits  1110
+		- Endereço multicast
+		- 224.0.0.0 -> 239.255.255.255
+	- Classe E
+		- Primeiros bits 1111
+		- Reservado para uso futuro
+		- 240.0.0.0 -> 255.255.255.255
+- Em suma apenas as classes A, B e C são usadas na prática
+- Os números de redes na Internet são atribuídos por uma corporação sem fins lucrativos chamada ICANN (Internet Corporation for Assigned Names and Numbers) para evitar conflitos
+- Por sua vez, a ICANN tem partes delegadas do espaço de endereços para diversas autoridades regionais, e estas fazem a doação de endereços IP a ISPs e outras empresas
+- Cada host e roteador tem seu endereço IP que codifica seu número de rede e de host
+- Combinações exclusivas, onde em uma rede duas maquinas não tem o mesmo valor
+- Todos endereços tem 32 bits
+	- São usados nos campos Source address e Destination address dos pacotes IP
+- O endereço se não se refere diretamente a um hots, mas sim uma inteface da rede
+- Caso um host esteja em mais de uma rede ele precisa ter um endereço para cada rede
+- Maioria dos hosts estão em uma só rede
+- Existe situações em que um computador convencional tem duas ou mais conexões físicas de rede, esses computadores são conhecidos como hosts multihomed
+	- Cada uma das conexões de rede da máquina precisa receber um endereço
+- Como os endereços IP codificam uma rede quanto um host nessa rede, um endereço não especifica um computador individual, mas uma conexão com uma rede
+- Possibilita um encaminhamento eficiente entre origem e destino
+- Endereços IPs podem se referir a redes e também a hosts
+- Por convenção, o hostID com todos os bits marcados com 0 nunca endereça um host individual, pois entes representa uma rede
+	- Assim, os endereços um endereço IP pode simbolizar a rede
+- Outra vantagem do endereço IP é a representação de um endereço de broadcast
+- 
