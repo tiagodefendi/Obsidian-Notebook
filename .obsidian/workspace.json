@@ -6,6 +6,7 @@
       {
         "id": "11b9cc4652dcd924",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "5046c1fc615f46a2",
@@ -13,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace/Enlace.md",
+                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Inter-rede/Endereçamento IP.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -25,6 +26,7 @@
       {
         "id": "20c7dddb60a82c3d",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "9f54d2005d687ae1",
@@ -100,6 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Inter-rede/Endereçamento IP.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,6 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Inter-rede/Endereçamento IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +141,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Inter-rede/Endereçamento IP.md"
+              }
             }
           }
         ]
@@ -160,7 +166,12 @@
   },
   "active": "9f54d2005d687ae1",
   "lastOpenFiles": [
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Inter-rede/Endereçamento IP.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Enlace/Enlace.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Inter-rede",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Fibra Ótica.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Cabo Par Trançado.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Cabo Coaxial.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão/Full-duplex.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão/Half-duplex.md",
     "UTFPR/3º Semestre/Redes de Computadores/Classificação de Redes/Classificação por Serviço/Peer-to-peer.md",
@@ -170,9 +181,6 @@
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Laser.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Infravermelho.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Rádio.md",
-    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Fibra Ótica.md",
-    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Cabo Coaxial.md",
-    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Meios de Transmissão/Cabo Par Trançado.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Modelo ISO-OSI.md",
     "UTFPR/3º Semestre/Redes de Computadores/Classificação de Redes/Classificação Topológica/Barramento.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelos de Rede.md",
@@ -183,19 +191,17 @@
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão/Simplex.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Informações",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Aplicação.md",
-    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Inter-redes.md",
+    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Inter-rede/Inter-redes.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Transporte.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Modelo TCP-IP.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas/Aplicação.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas/Apresentação.md",
-    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas/Enlace.md",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados/Tipos de Transmissão",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física/Transmissão de Dados",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas/Física",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP/Camadas",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo TPC-IP",
     "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede/Modelo ISO-OSI/Camadas",
-    "UTFPR/3º Semestre/Redes de Computadores/Modelos de Rede",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

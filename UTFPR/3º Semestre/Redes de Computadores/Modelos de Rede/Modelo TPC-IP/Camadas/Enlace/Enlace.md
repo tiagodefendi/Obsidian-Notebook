@@ -381,7 +381,285 @@
 				- Entrega de dados
 					- Oferece naturalmente um meio para transmitir e receber dados
 					- Não tem garantia de serviço e as camadas mais altas devem ligar com a detecção e a correção de erros
-- 
-- 
+## Redes WPANs
+
+- Transmitem a taxas de dados mais baixas e cobrem distâncias menores
+- Bluetooth, por exemplo, permite taxas de transmissão de até 1Mbps e atinge uma distância nominal de até 10 metros
+- Substituir os cabos de conexão entre equipamentos pessoais portáteis (telefones, pagers, laptops) e também permitir acesso à Internet
+- Ficando mais populares e um número crescente de edifícios de escritórios, aeroportos e outros lugares públicos estão sendo equipados com redes sem fio
+### Bluetooth
+
+- Bluetooth fornece conexão sem fio a curta distâncias
+- desenvolvida inicialmente pela Ericsson (1994) #1990s 
+- Substituir os cabos que conectavam estes dispositivos ganhou o suporte da Intel, IBM dentre outras empresas de renome
+- Opera na faixa de frequência de 2,4 a 2,482 GHz
+- Adotou o espalhamento espectral por salto de frequência de modo a garantir comunicação robusta em uma faixa de frequência compartilhada com outras aplicações como o WiFi
+- Vantagens em relação a conexão via infravermelho
+	- Suporta vários dispositivos e não exige visada direta entre transmissor e receptor
+- Apesar de ser padronizada pelo IEEE 802.15 esta assemelha-se mais a um barramento como um USB, mas é wireless
+- Um piconet, que consiste em um nó mestre e até sete nós escravos ativos, situados dentro de uma distância de 10 metros
+- Se existir muitas piconets na mesma sala elas podem até mesmo ser conectadas por um nó de ponto, sendo então denominadas de scatternet
+- Seu sucesso depende agora de sua adoção em larga escala
+- Gerando volumes que tornem insignificantes o custo de sua acréscimo a dispositivos portáteis
+- Caso isto não ocorra ele poderá ser eclipsado por soluções que oferecem taxas de dados mais altas e mais opções de conectividade como o WiFi
+### WIMAX
+
+- Padrão o 802.16
+- Permite velocidades de aproximadamente 54 Mbps, podendo chegar a 75 Mbps
+- Distância de 6 Km a 9 Km
+- Fornecem desempenho equivalentes aos dos tradicionais meios com fio como DSL, cable modem ou E1/T1 porém com tecnologia sem fio
+- Promete revolucionar a indústria de acesso de banda larga
+# Switching
+
+- A comutação (switching) é baseada no endereço de hardware
+- O endereço MAC da placa de rede do dispositivo é utilizado para filtragem de rede
+- Switches utilizam chips especiais, chamados “ASICS” (Application Specific Integrated Circuits), para formar e manter as tabelas de filtragem (filter tables)
+- Switches são rápidos porque não analisam informações pertinentes à camada de Rede
+- Analisando os endereços de hardware dos quadros (frames) antes de decidir pelo encaminhamento ou abandono desse quadro
+- O que torna a comutação na camada de Enlace tão eficiente é a nãomodificação de dados, apenas no frame que o encapsula
+	- Nenhuma modificação no pacote é realizada
+	- processo de comutação é muito mais rápido e menos suscetível a erros do que o processo de roteamento existente na camada de Redes
+- Pode ser utilizada para conectividade entre grupos de trabalho e para a segmentação da rede, ou quebra dos domínios de colisão
+- Aumenta a largura de banda disponível para cada usuário
+- Cada conexão (interface) disponibilizada pelo switch representa seu próprio domínio de colisão
+- Devido a esse fator pode-se conectar múltiplos dispositivos em cada interface
+- Possui algumas limitações
+	- Modo correto de se criar redes comutadas eficientes é certificando-se que os usuários permanecerão ao menos 80% de seu tempo no segmento local
+	- Quebram domínios de colisão, entretanto, a rede ainda é um grande domínio de broadcast, o que pode limitar o tamanho da rede, assim como causar problemas de performance
+	- Assim, pacotes em broadcast e multicast pode vir a ser problemas sérios à medida que a rede cresce
+- Switches da camada de Enlace não podem substituir completamente os roteadores da camada de Redes em uma internetwork
+# Processo de aprendizagem de endereços físicos pelos switches
+
+- Todo switch forma uma tabela, chamada de tabela MAC
+	- Mapeia os endereços de hardware (MAC Address) dos dispositivos às portas (interfaces) às quais eles se encontram conectados
+- Assim, que um switch é ligado, essa tabela encontra-se vazia
+- Quando um dispositivo inicia uma transmissão em uma porta do switch recebe um quadro
+- o switch armazena o endereço de hardware do dispositivo transmissor em sua tabela MAC, registrando a interface à qual esse dispositivos está conectado
+- Em um primeiro momento, o switch não tem outra opção a não ser “inundar” a rede com esse quadro
+- Uma vez que ele ainda não possui em usa tabela MAC o registro da localização do dispositivo destinatário
+- Esse tipo de transmissão é conhecida como broadcast
+- Se um determinado dispositivo responder a essa mensagem de broadcast enviando um frame de volta, o switch irá, então, capturar o endereço de hardware (MAC) desse dispositivo e registrá-lo em sua tabela MAC
+- Associando o endereço MAC desse dispositivo à interface (porta) que recebeu o quadro
+- O switch tem agora dois endereços em sua tabela MAC, podendo assim estabelecer uma conexão ponto-a-ponto entre os dois dispositivos
+	- Os quadros pertencentes a essa transmissão serão encaminhados apenas aos dois dispositivos participantes
+- Nenhuma outra porta do switch irá receber os quadros, a não ser as duas portas mapeadas
+- É essa a grande diferença entre switches e hubs
+- Em uma rede composta por hubs, quadros são encaminhados a todas as portas, o tempo todo, criando um grande domínio de colisão
+- Se os dois dispositivos não se comunicarem com o switch novamente por um determinado período de tempo, o switch irá deletar os endereços de usa tabela MAC, mantendo-a assim a mais atualizada possível
+## Tipos de Comutação
+
+- A latência envolvida na comutação de um quadro em um switch depende do modo de comutação (switching mode) configurado do switch
+- 3 tipos de comutação
+	- Store and forward
+		- “Armazene e encaminhe"
+		- O quadro é, em um primeiro momento, completamente recebido e armazenado no buffer do switch
+		- Em seguida, uma checagem de erros (CRC – Cyclic Redundant Check) é efetuada
+		- Finalmente, o endereço de destino é localizado na tabela MAC
+		- Método mais lento
+	- Cut-through - tempo real
+		- Esse é o modo predominante quando se fala em comutação em LAN
+		- Copia apenas o endereço de destino (os primeiros 7 bytes seguindo o campo Preamble) para seu buffer
+		- O endereço do hardware de destino é localizado na tabela MAC, a interface de saída é determinada e o quadro é encaminhado ao seu destino
+		- Provê baixa latência, pois o encaminhamento do quadro começa assim que o endereço de destino é identificado e a interface de saída determinada
+	- FragmentFree - cut-through modificado
+		- Mdificação do cut-through
+		- Aguarda a passagem da janela de colisão (collision window de 64 bytes) antes de encaminhar o pacote
+		- Se considera a alta probabilidade de que, se um quadro possui algum erro, este será identidicado nos 64 bytes iniciais
+		- O modo FragmentFree promove uma checagem de erros mais confiável, acrescentando muito pouco à latência do processo
+## Esquemas de inibição de loops em comutadores
+
+- Estabelecer conexões (links) redundantes é sempre uma boa ideia entre switches
+- Redundância, nesse caso, é usada para evitar a completa queda da rede no caso de falha de um link (cabo par trançado, por exemplo)
+- Embora a redundância em links possa ser extremamente útil, tal redundância pode trazer mais problemas do que resolvê-los
+- Quadros podem ser propagados através de todos os links redundantes simultaneamente, um fenômeno chamado loop pode ocorrer
+- Caso nenhum esquema de inibição de loops de rede seja implantado, os switches poderão propagar quadros continuamente na rede. 
+	- Esse fenômeno é chamado de broadcast storm (tempestade de broadcast)
+- Aumento das chances de um dispositivo receber múltiplas cópias de mesmo quadro, uma vez que esse quadro pode chegar de diferentes segmentos simultaneamente
+- A tabela MAC ficará “confusa” sobre a localização (interface) de um determinado dispositivo, uma vez que o switch pode receber determinado quadro de mais de um link. 
+	- Pode ocorrer de o switch não encaminhar o quadro, uma vez que estará constantemente atualizando sua tabela MAC com a localização do hardware transmissor. 
+	- Esse fenômeno é conhecido como trashing da tabela MAC
+- Um dos maiores problemas é a geração de múltiplos loops, ou seja, um loop dentro de outro. 
+	- Se uma tempestade de broadcast então ocorrer, o switch ficará sem condições de desempenhar a comutação de pacotes, literalmente “travando” a rede
+## Protocolo STP
+
+- Uma solução para o problema de loop é com o Protocolo Spanning Tree (STP)
+- Criado pela DEC (Digital Equipment Corporation)
+- Homologado posteriormente pela IEEE como 802.1d, não é compatível com a versão original do protocolo criado com o DEC
+- Evitar que loops ocorram
+- Monitora constantemente a rede identificando todos os links em atividade e certificando-se que loops de rede não ocorram, através da desativação de links redundantes
+- “Elegendo” um switch-raiz (root bridge) responsável pela definição de toda a topologia da rede
+- Apenas um switch-raiz pode existir
+- Todas as interfaces ou portas do switch-raiz são denominadas “portas designadas”
+	- Encontram-se sempre no modo de operação denominado “modo de encaminhamento” (forwarding-state)
+	- Interfaces operando em modo de encaminhamento podem tanto enviar quanto receber dados
+- Outros switches presentes na rede são denominados não-raiz (non-root bridges)
+- A porta com “menor custo” (determinada pela largura de banda do link em questão) ao switch-raiz é chamada de “portaraiz” (root-port) 
+	- Se encontrará em modo de encaminhamento, podendo enviar e receber dados
+- As portas restantes com menor custo ao switch-raiz serão denominadas “portas designadas”.
+- Se em uma rede com diversos switches o custo de duas ou mais portas for o mesmo, o ID (número de identificação) do switch deverá ser usado e será considerada designada a porta referente ao switch com o menor ID
+- O valor de ID padrão para todos os dispositivos rodando o STP do IEEE é 32.768
+- As portas restantes serão consideradas portas não-designadas
+	- Encontrarão-se em modo bloqueio (blocking mode), não podendo enviar ou receber dados
+- Switches e bridges rodando STP trocam informações através do protocolo Bridge Protocol Data Units (BPDU)
+- O BPDUs enviam mensagens de configuração via quadros em broadcast
+- O ID de cada switch é enviado aos outros dispositivos através das BPDUs
+## Modos de operação das portas de um switch
+
+- Os modos de operação de switches e bridges rodando em STP podem variar entre quatro modos
+	- Bloking
+		- Não encaminhará quadros. 
+		- Pode receber e analisar BPDUs.
+		- Todas as portas de um switch encontram-se em modo bloking quando ele é ligado
+	- Listening
+		- Recebe e analisa BPDUs para certificar-se de que não ocorrerão loops na rede antes de começar o encaminhamento de quadros
+	- Learning
+		- Registra os endereços dos hardwares conectados às interfaces e forma a tabela MAC. 
+		- Não encaminha quadros, ainda
+	- Forwarding
+		- Envia e recebe quadros
+- Switches se encontram ou no modo blocking ou forwarding
+- Uma porta no modo forwarding é tida como tendo o menor custo ao switch raiz
+- Se a topologia de rede se alterar (devido a uma falha) todas as portas conectadas em redundância de um switch retornarão aos modos listening e learning
+- Blocking é usado para impedir o acontecimento de loops de rede
+	- O switch determina o melhor caminho ao switch-raiz, todas os portas entrarão em modo blocking
+	- Portas em modo blocking podem receber BPDUs
+- Se um switch por alum motivo determinar que uma porta em modo blocking deve tornar-se uma posta designada, ela entrará em modo listening
+	- Analisando todas as BPDUs recebidas para certificar-se de que não criará um loop uma vez que entre em modo forwarding
+## VLAN
+
+- Em uma rede comutada, ela é plana (flat)
+	- Todos os pacotes broadcast transmitidos são "enxergados" por todos os dispositivos conectados as redes
+	- Mesmo se um dispositivo não seja o destinatário de tais pacotes
+- Comutação segrega domínios de colisão, criando segmentos individuais para cada dispositivo conectado ao switch
+	- Restrições à distância impostas pelo padrão Ethernet são reduzidas
+	- Redes geograficamente podem ser construídas
+- Quanto maior o número de usuários e dispositivos, maior o volume de broadcast e pacotes que cada dispositivos tem de processar transitando na rede
+- Problema inerente é a segurança
+	- Todos usuários "enxergam" todos dispositivos
+- Tamanho de broadcast ser reduzido, mas seu número aumenta
+- Antes do uso de VLANs tínhamos apenas um grande domínio de broadcast
+- Conforme VLANs vão sendo criadas, o número de domínios de broadcast aumenta, porém o tamanho de cada novo domínio é menor de que domínio original
+- Possível resolver uma boa parte dos problemas associados à comutação na camada de enlace
+- Razões para criar LANs Virtuais
+	- Redução do tamanho e aumento do número de domínios de broadcast
+	- Agrupamento lógicos de usuários e de recursos conectados em portas administrativamente definidas no switch
+	- VLANs podem ser organizadas por localidade, função, departamento, etc
+		- Independente da localização física dos recursos
+	- Melhor gerenciabilidade e aumento de segurança da rede local (LAN)
+	- Flexibilidade e escabilidade
+## Redução do tamanho dos domínios de Broadcast
+
+- Roteadores, matêm as mensagens de broadcast dentro da rede que os originou
+- Switches, propagam mensagens de broadcas para todos os seus segmentos
+	- Chamamos uma rede comutada de "plana", porque trata de um grande domínio de broadcast
+- Um bom administrador de redes deve certificar-se de que a rede esteja devidamente segmentada
+	- Evitar que problemas em um determinado segmento se propaguem para toda rede
+	- Combinação entre comutação  roteamento
+- Uma vez que o preço dos switches vem caindo é tendência real que as empresas substituam hubs por switches
+- Em uma VLAN, todos dispositivos são membros do mesmo domínio de broadcast
+	- Mensagens de broadcast são barradas de todas as portas em um switch que não seja membros da mesma VLAN
+- Roteadores devem ser usados em conjunto com switches para que se estabeleça a comutação entre VLANs
+	- Impede que mensagens de broadcast sejam propagadas por toda rede
+## Gerenciabilidade e aumento de segurança em LANs através de switches
+
+- Problemas com redes planas é a segurança que é implementada através dos roteadores
+- Segurança é gerenciada e mantida pelo roteador, porém qualquer um que se conecte localmente à rede tem acesso aos recursos disponíveis naquela VLAN específica
+- Outro problema é que qualquer um pode conectar um analisador em um hub
+	- Assim, tendo acesso a todo tráfego daquele segmento de rede
+- Mais um problema é que usuários podem se associar a um determinado grupo de trabalho simplesmente conectando suas estações ou laptops a um hub existente, ocasionando um "caos"
+- Através da criação de VLANs, os administradores adquirem  controle sobre cada porta e cada usuário
+	- Controla cada porta e quais recursos serão alocados a ela
+	- Se a comunicação inter-VLANs é necessária, restrições em um roteador podem ser implementadas
+	- Restrições também podem ser impostas a endereços MAC, protocolos e a aplicação
+- Possibilitam uma flexibilidade e escabilidade mais que os roteadores
+- Com Switches é possível agrupar usuários por grupos de interesse
+	- VLANs organizacionais
+- Switchers não podem substituir os roteadores
+- Para comunicação inter-VLAN é necessário obrigatoriamente o uso de roteadores
+## Tipos de VLAN
+
+- São tipicamente criadas por um administrador de redes, que designa determinadas portas de um switch para uma determinada VLAN
+- Associação estática
+	- O modo mais comum e seguro de se criar uma VLAN é estaticamente
+	- A porta do switch designada para manter a associação em uma determinada VLAN fará isso até que um administrador mude a sua designação
+	- Fácil de implementar e monitorar
+	- Funciona bem em ambientes com movimento  de usuário é controlado na rede
+- Associação dinâmica
+	- Determinam a designação de uma VLAN para um dispositivo automaticamente
+	- Com uso de softwares específicos de gerenciamento é possível mapear endereços de hardware (MAC), protocolos e aplicações ou logins de usuário para uma VLAN específica
+	- Simplifica o a vida do administrador uma vez que o banco de ados MAC x VLAN está formado
+	- Esforço considerável é exigido inicialmente, na criação do mesmo
+## Identificação de VLANs
+
+- Podem ser espalhar por uma “malha” de switches interconectados
+- Os switches desse emaranhado devem ser capazes de identificar os quadros e as respectivas VLANs às quais estes pertencem
+- Frame tagging (etiquetamento de quadro)
+	- Podem direcionar os quadros para as portas apropriadas
+- Existem dois tipos de links (portas) em um ambiente comutado (portas em switch)
+- Links de acesso – access links
+	- Parte de uma VLAN e são tidos como a VLAN nativa
+	- Qualquer dispositivo conectado a uma porta ou link de acesso não sabe a qual VLAN pertence
+	- O dispositivo apenas assumirá que é parte de um domínio de broadcast, sem entender a real topologia da rede
+	- Os switches removem qualquer informação referentes às VLANs dos quadros antes de enviálos a um link de acesso
+	- Dispositivos conectados a links de acesso não podem se comunicar com dispositivos fora de sua própria VLAN
+		- A não ser que um roteador faça o roteamento dos pacotes
+- Links de transportes – trunk links
+	- Também denominados uplinks
+	- Podem carregar informações sobre múltiplas VLANs
+	- Usados para conectar switches a outros switches, routeadores ou mesmo a servidores
+	- São suportados em Fast ou Gigabit Ethernet, mas não pode ser suportado em redes 10BaseT Ethernet
+	- Transportar VLANs entre dispositivos e podem ser configurados para transportar todas as VLANs ou somente algumas
+	- Links de Transporte ainda possuem uma VLAN nativa (default – VLAN1), que é utilizada para gerenciamento em caso de falhas
+- O processo de “entroncamento” de links permite colocar uma única porta como parte de múltiplas VLANs
+	- Bastante comum na conexão quando se que conectar um servidor que prove serviço a várias VLANs sem usar um roteador
+- Uso de entroncamentos na conexão entre switches (uplink)
+	- Links de transporte podem transportar informações sobre algumas ou todas as VLANs existentes através de um único link (porta) física
+- Ao se criar uma porta de transporte, informações sobre todas as VLANs são transportadas através dela, por padrão
+- VLANs indesejadas devem ser manualmente excluídas do link para que suas informações não sejam propagadas através dele
+### Frame tagging
+
+- Um switch conectado a uma rede de grande porte necessita fazer um acompanhamento dos usuários e quadros que atravessam o aglomerado de switches e VLANs
+- O processo de identificação de quadros associa, de forma única, uma identificação a cada quadro
+- Essa identificação é conhecida como VLAN ID ou VLAN color
+#### Métodos de Identificação de VLANs
+
+- Existem alguns métodos de identificação de VLANs, dois métodos muito usados são: o ISL e o 802.1q
+- ISL (Inter-Switch Link)
+	- Switches Cisco, o encapsulamento ISL pode ser utilizado às interfaces de switches, de roteadores e de servidores, para seu entroncamento
+	- O servidor truncado é membro de todas as VLANs simultaneamente
+		- Os usuários não precisam atravessar um dispositivo de camada 3 para ter acesso a ele, reduzindo a complexidade e aumentando a performance da rede
+	- O método ISL literalmente escapsula quadros Ethernet com informações sobre VLANs
+	- Essa informação, adicionada ao encapsulamento do quadro, permite a multiplexação de VLANs por meio de apenas um link de transporte
+	- Método externo de identificação, ou seja, o quadro original não é alterado, sendo apenas encapsulado por um cabeçalho ISL
+	- Uma vez que o quadro é encapsulado, apenas dispositivos (ou interfaces) compatíveis com ISL estarão habilitados e decodificá-dos
+	- Dispositivos não ISL que recebam um quadro ISL iram achar que o quadro está corrompido
+	- **É importante entender que o encapsulamento ISL apenas ocorre se o quadro for encaminhado a uma porta de transporte (trunk link) e o encapsulamento é removido caso o quadro seja encaminhado a uma porta de acesso**
+	- Para para gerenciar e manter a consistência de todas as VLANs configuradas em uma rede pode ser usado o protocolo VTP (Virtual Trunk Protocol)
+		- Necessário também a criação de um servidor VTP
+		- Todos os servidores que necessitem compartilhar informações sobre VLANs devem utilizar a mesma identificação de domínio
+- 802.1q
+	- Criado pela IEEE para ser um método padrão para identificação de quadros
+	- Método padrão para identificação de quadros, esse método insere um campo específico dentro do quadro, responsável pela identificação da VLAN
+	- O quadro Ethernet não possui campos sobressalentes
+	- Então o que fazer para identificar as VLANs?
+	- Lembrando que alterar o quadro implica em vários problemas com os placas de redes compatíveis com o padrão Ethernet
+	- A IEEE enfrentou esse problema em 1995 e depois de muita discussão, o IEEE fez o impensável e mudou o cabeçalho do padrão Ethernet #1990s 
+	- O novo formato foi publicado no padrão 802.1q, emitido em 1998 #1990s 
+	- O novo formato contém uma tag de VLAN, é claro que com esta solução não temos que jogar as placas de redes Ethernet padrão fora
+	- **A chave para a solução é perceber que os campos VLAN só são realmente usados pelas pontes e switches, e não pelas máquinas dos usuários**
+	- Apenas as pontes e switches devem reconhecer o 802.1q
+	- Como a origem não gera os campos VLAN, quem o fará?
+		- A resposta é que o primeiro switch capaz de reconhecer a VLAN que tocar um quadro incluirá esses campos, e o último dispositivo do percurso os removerá
+	- Porém, como saber à qual VLAN pertence cada quadro? 
+		- Bem, o primeiro switch poderia atribuir um número de VLAN a uma porta, examinar o MAC, etc
+	- Esperá-se que em um futuramente as novas placas tal como Gigabit Ethernet suportem o 802.1q
+	- Ao quadro 802.1q foi adicionado o campo tag que possui um campo identificador de VLAN, que indica a que campo o quadro pertence
+	- Um campo de 3 bits de Prioridade, que não tem nenhuma relação com a VLAN
+		- mas como a alteração do formato do quadro não acontece sempre foram adicionados campos extras
+		- Tal campo pode ser usado para informar a prioridade do quadro
+		- Usado por exemplo para dizer que um quadro é de voz, ou outra informação em tempo real que deve ter um certo nível de prioridade de entrega
+	- O último bit é o CFI (Canonical Format Indicator – indicador de formato canônico)
+		- Originalmente criado para indicar endereços MAC littleendian versus endereços MAC big-endian
+		- Esse uso se perdeu em outras controvérsias e também não tem relação com VLANs
 
 Refs: [[Redes de Computadores]], [[Modelos de Rede]], [[Modelo TCP-IP]]

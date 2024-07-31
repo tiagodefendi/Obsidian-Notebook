@@ -17,7 +17,6 @@
 - Difícil de fazer acoplamento na placa de rede
 	- Alinhar o feixe de luz produzido pela placa de rede com a fibra de transmissão, de modo que a luz possa ser transmitida e alinhar a fibra de recepção com o receptor de luz, de modo que a placa possa receber informações corretamente
 	- Fibra tem 65 mm de espessura e um cabo de rede 100 mm
-	- 
 # Característica
 
 - Como a luz só pode ser transmitida em uma direção por vez, o cabo de fibra óptica possui duas fibras, uma para transmissão de dados e outra para recepção. 
