@@ -269,6 +269,7 @@
 - Em 1997 a WLAN 802.11 começou a funcionar a 1Mbps ou 2 Mbps #1990s 
 - Pessoas reclamaram que isto era muito lento, já que o padrão da época para redes com fio era no mínimo 10 Mbps
 ## Dois novos padrôes
+
 -  802.11a
 	- Utiliza uma faixa de frequências mais larga e funcionava em velocidades de 54 Mbps na banda de 5 Ghz
 	- Utilizando a técnica OFDM (Orthogonal Frequency Division Multiplexing)
